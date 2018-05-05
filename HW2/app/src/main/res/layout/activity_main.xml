@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.mac.hw2.MainActivity">
+
+    <Button
+        android:id="@+id/button_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="37dp"
+        android:autoText="true"
+
+        android:text="线性布局"
+        app:layout_constraintBottom_toTopOf="@+id/button_relative"
+        app:layout_constraintStart_toStartOf="@+id/button_relative" />
+
+    <Button
+        android:id="@+id/button_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:text="相对布局"
+        app:layout_constraintBottom_toTopOf="@+id/button_frame"
+        app:layout_constraintStart_toStartOf="@+id/button_frame" />
+
+    <Button
+        android:id="@+id/button_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:text="帧布局"
+        app:layout_constraintBottom_toTopOf="@+id/button_table"
+        app:layout_constraintStart_toStartOf="@+id/button_table" />
+
+    <Button
+        android:id="@+id/button_table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="29dp"
+        android:text="表格布局"
+        app:layout_constraintBottom_toTopOf="@+id/button_net"
+        app:layout_constraintStart_toStartOf="@+id/button_net" />
+
+    <Button
+        android:id="@+id/button_net"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="66dp"
+        android:text="网格布局"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

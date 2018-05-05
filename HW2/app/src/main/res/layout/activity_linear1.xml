@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mac.hw2.linear1"
+    tools:layout_editor_absoluteY="81dp">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="459dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginStart="1dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/bn_toVertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="垂直对齐" />
+
+        <Button
+            android:id="@+id/bn_toHorizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="水平对齐" />
+
+        <Button
+            android:id="@+id/bn_toLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="靠左对齐" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/button_return"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="return" />
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
