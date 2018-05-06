@@ -4,14 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mac.hw2.frame">
+    tools:context="com.example.mac.hw2.frame"
+    tools:layout_editor_absoluteY="81dp">
 
-    <Button
-        android:id="@+id/button_return"
+    <FrameLayout
+        android:id="@+id/frameLayout2"
         android:layout_width="0dp"
-        android:layout_height="64dp"
-        android:text="return"
+        android:layout_height="444dp"
+        android:layout_marginBottom="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ViewFlipper
+            android:id="@+id/flipper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ViewFlipper>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2">
+
+        <Button
+            android:id="@+id/button_return"
+            android:layout_width="392dp"
+            android:layout_height="match_parent"
+            android:text="Button" />
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

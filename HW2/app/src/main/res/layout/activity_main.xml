@@ -6,15 +6,16 @@
     android:layout_height="match_parent"
     android:layout_gravity="center_vertical|center_horizontal"
     android:orientation="vertical"
-    tools:context="com.example.mac.hw2.MainActivity">
+    tools:context="com.example.mac.hw2.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
 
     <Button
         android:id="@+id/button_linear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="37dp"
-        android:autoText="true"
 
+        android:autoText="true"
         android:text="线性布局"
         app:layout_constraintBottom_toTopOf="@+id/button_relative"
         app:layout_constraintStart_toStartOf="@+id/button_relative" />
@@ -50,10 +51,20 @@
         android:id="@+id/button_net"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="66dp"
+        android:layout_marginBottom="31dp"
         android:text="网格布局"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="23dp"
+        android:text="廖鹏林"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/button_net" />
 
 </android.support.constraint.ConstraintLayout>
