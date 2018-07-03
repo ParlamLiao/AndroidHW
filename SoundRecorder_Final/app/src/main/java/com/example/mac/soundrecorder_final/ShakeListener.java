@@ -5,8 +5,7 @@ import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-import android.os.Bundle;
-import android.os.SystemClock;
+import android.view.View;
 
 /**
  * Created by mac on 16/5/18.
@@ -35,10 +34,9 @@ public class ShakeListener implements SensorEventListener {
     //上次检测时间
     private long lastUpdateTime;
 
-    public ShakeListener(Context c) {
+    public ShakeListener(MainActivity c) {
         //获得监听对象
         context = c;
-        start();
     }
     //开始
     public void start() {
@@ -52,7 +50,7 @@ public class ShakeListener implements SensorEventListener {
         if(sensor != null) {
             sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_NORMAL);
         }
-
+        System.out.println("重力传感器监听器创建成功");
     }
     //停止检测
     public void stop() {
